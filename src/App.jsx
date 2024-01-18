@@ -70,7 +70,7 @@ function RandomButton() {
   return (
     <button
       onClick={handleClick}
-      className="flex items-center justify-center gap-2 rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700"
+      className="flex w-80 items-center justify-center gap-2 rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700"
     >
       Random Article
       <FaRandom className="h-4 w-4" />
@@ -95,7 +95,7 @@ function App() {
     <>
       <Layout>
         <div className="flex h-60 w-6/12 items-center justify-around gap-2 rounded-xl border bg-slate-600 sm:gap-3 md:gap-4 lg:gap-6">
-          <div className="App">
+          <div className="App flex flex-col items-center">
             <div className="pb-4">
               <h1 className="text-3xl font-extrabold text-[#FFD23F] sm:text-3xl md:text-4xl lg:text-5xl">
                 Wikipedia Viewer
