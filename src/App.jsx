@@ -40,16 +40,16 @@ function SearchBox({ onSearch }) {
 
 function Results({ results }) {
   return (
-    <section className="p-2">
+    <ul className="w- border-xl flex flex-col items-center justify-around gap-2 bg-slate-600 p-2 sm:gap-3 md:gap-4 lg:gap-6">
       {results.map((result) => (
-        <div key={result.pageid}>
+        <li key={result.pageid}>
           <a href={`https://en.wikipedia.org/?curid=${result.pageid}`}>
             {result.title}
           </a>
           <p>{result.snippet}</p>
-        </div>
+        </li>
       ))}
-    </section>
+    </ul>
   );
 }
 Results.propTypes = {
