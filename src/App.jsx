@@ -2,6 +2,9 @@
 import { useState } from "react";
 import axios from "axios";
 import Layout from "./Components/Layout";
+import { FiSearch } from "react-icons/fi";
+import { FaRandom } from "react-icons/fa";
+import PropTypes from "prop-types";
 
 function SearchBox({ onSearch }) {
   const [searchTerm, setSearchTerm] = useState("");
@@ -9,6 +12,10 @@ function SearchBox({ onSearch }) {
   const handleSubmit = (event) => {
     event.preventDefault();
     onSearch(searchTerm);
+  };
+
+  SearchBox.propTypes = {
+    onSearch: PropTypes.func.isRequired,
   };
 
   return (
@@ -22,9 +29,10 @@ function SearchBox({ onSearch }) {
       />
       <button
         type="submit"
-        className="rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700"
+        className="flex items-center justify-center gap-2 rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700"
       >
         Search
+        <FiSearch className="h-4 w-4" />
       </button>
     </form>
   );
@@ -32,18 +40,27 @@ function SearchBox({ onSearch }) {
 
 function Results({ results }) {
   return (
-    <ul>
+    <section className="p-2">
       {results.map((result) => (
-        <li key={result.pageid}>
+        <div key={result.pageid}>
           <a href={`https://en.wikipedia.org/?curid=${result.pageid}`}>
             {result.title}
           </a>
           <p>{result.snippet}</p>
-        </li>
+        </div>
       ))}
-    </ul>
+    </section>
   );
 }
+Results.propTypes = {
+  results: PropTypes.arrayOf(
+    PropTypes.shape({
+      pageid: PropTypes.number.isRequired,
+      title: PropTypes.string.isRequired,
+      snippet: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
+};
 
 function RandomButton() {
   const handleClick = () => {
@@ -53,9 +70,10 @@ function RandomButton() {
   return (
     <button
       onClick={handleClick}
-      className="rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700"
+      className="flex items-center justify-center gap-2 rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700"
     >
       Random Article
+      <FaRandom className="h-4 w-4" />
     </button>
   );
 }
@@ -76,13 +94,13 @@ function App() {
   return (
     <>
       <Layout>
-        <div className="rounded-lg bg-black p-4">
-          <h1 className="text-3xl font-extrabold text-[#FFD23F] sm:text-3xl md:text-4xl lg:text-5xl">
-            Wikipedia Viewer
-          </h1>
-        </div>
-        <div className="flex w-6/12 items-center justify-around gap-2 sm:gap-3 md:gap-4 lg:gap-6">
+        <div className="flex h-60 w-6/12 items-center justify-around gap-2 rounded-xl border bg-slate-600 sm:gap-3 md:gap-4 lg:gap-6">
           <div className="App">
+            <div className="pb-4">
+              <h1 className="text-3xl font-extrabold text-[#FFD23F] sm:text-3xl md:text-4xl lg:text-5xl">
+                Wikipedia Viewer
+              </h1>
+            </div>
             <SearchBox onSearch={handleSearch} />
             <Results results={results} />
             <RandomButton />
