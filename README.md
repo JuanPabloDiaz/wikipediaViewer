@@ -8,7 +8,7 @@ This project is a responsive web application that allows users to use a pomodoro
 
 This project is a Wikipedia Viewer, which is a time management system that encourages people to work with the time they have—rather than against it. Using this method, you break your workday into 25-minute chunks separated by five-minute breaks. These intervals are referred to as pomodoros.
 
-This project was built as part of the **[freeCodeCamp’s legacy Front End Development Certification]()**. The goal was to build a Wikipedia Viewer with React.
+This project was built as part of the **[freeCodeCamp’s legacy Front End Development Certification]()**. The goal was to build a Wikipedia Viewer with React. [Learn more](https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/build-a-wikipedia-viewer)
 
 <div align="center">
 
