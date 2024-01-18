@@ -40,7 +40,7 @@ function SearchBox({ onSearch }) {
 
 function Results({ results }) {
   return (
-    <ul className="w- border-xl flex flex-col items-center justify-around gap-2 bg-slate-600 p-2 sm:gap-3 md:gap-4 lg:gap-6">
+    <ul className="text-md flex flex-col items-center justify-around gap-2 rounded-xl bg-slate-600 p-2 text-white sm:gap-3 md:gap-4 lg:gap-6">
       {results.map((result) => (
         <li key={result.pageid}>
           <a href={`https://en.wikipedia.org/?curid=${result.pageid}`}>
