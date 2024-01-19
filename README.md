@@ -2,11 +2,11 @@
 
 # Wikipedia Viewer 📚
 
-This project is a responsive web application that allows users to use a pomodoro timer to break down work into intervals, traditionally 25 minutes in length, separated by short breaks. Thats why is called Wikipedia Viewer
+Craving a knowledge adventure? Our Wikipedia Viewer app is your portal to a universe of information! Search effortlessly for any topic that sparks your curiosity, or let serendipity guide you with a single click of the "Random Article" button. Powered by the vast Wikipedia database and a beautifully designed interface, exploring knowledge has never been easier. Whether you're fueling research, satisfying your inner scholar, or simply enjoying the thrill of discovery, our app empowers you to learn, explore, and expand your horizons – all at your fingertips. So, are you ready to embark on a journey of endless knowledge? Dive in and start exploring today!
 
 ## Description 💡
 
-This project is a Wikipedia Viewer, which is a time management system that encourages people to work with the time they have—rather than against it. Using this method, you break your workday into 25-minute chunks separated by five-minute breaks. These intervals are referred to as pomodoros.
+Responsive Wikipedia Viewer that allows users to search for articles on Wikipedia. Users can also click a button to see a random Wikipedia entry.
 
 This project was built as part of the **[freeCodeCamp’s legacy Front End Development Certification]()**. The goal was to build a Wikipedia Viewer with React. [Learn more](https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/build-a-wikipedia-viewer)
 
@@ -37,7 +37,7 @@ This project was built as part of the **[freeCodeCamp’s legacy Front End Devel
 
 ### Built With 🔑
 
-Welcome to [Wikipedia Viewer](https://wiki.jpdiaz.dev), a simple and intuitive pomodoro timer built with React.js, Vite.js, and Tailwind CSS.
+Welcome to [Wikipedia Viewer](https://wiki.jpdiaz.dev), an easy to use site that allow users to search for articles on Wikipedia. Users can also click a button to see a random Wikipedia entry.Built with React.js, Vite.js, and Tailwind CSS.
 
 ![React](https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=black)
 ![Vite](https://img.shields.io/badge/Vite-646CFF.svg?style=for-the-badge&logo=Vite&logoColor=white)
@@ -46,7 +46,7 @@ Welcome to [Wikipedia Viewer](https://wiki.jpdiaz.dev), a simple and intuitive p
 Here's a closer look at the tech stack:
 
 - Front-End: React.js, Vite.js, Tailwind CSS
-- Back-End: N/A
+- Back-End: Wikipedia API (MediaWiki)
 - Deployment: Vercel
 
 ## Get started 🛠️
@@ -101,6 +101,7 @@ I hope you enjoy using the Wikipedia Viewer!
 
 Resources list that I find helpful and would like to give credit to.
 
+- [MediaWiki API](https://www.mediawiki.org/wiki/API:Main_page)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Vite.js](https://vitejs.dev/)
 - [React.js](https://reactjs.org/)
