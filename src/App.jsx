@@ -42,15 +42,24 @@ function Results({ results }) {
   return (
     <ul className="text-md flex flex-col items-center justify-around gap-2 rounded-xl bg-slate-600 p-2 text-white sm:gap-3 md:gap-4 lg:gap-6">
       {results.map((result) => (
-        <li key={result.pageid}>
-          <a href={`https://en.wikipedia.org/?curid=${result.pageid}`}>
+        <li className="rounded-lg border bg-black p-2" key={result.pageid}>
+          <a
+            className="font-bold"
+            href={`https://en.wikipedia.org/?curid=${result.pageid}`}
+          >
             {result.title}
           </a>
-          <p>{result.snippet}</p>
+          <p>{stripHtmlTags(result.snippet)}</p>
         </li>
       ))}
     </ul>
   );
+}
+
+function stripHtmlTags(html) {
+  const tempElement = document.createElement("div");
+  tempElement.innerHTML = html;
+  return tempElement.innerText;
 }
 Results.propTypes = {
   results: PropTypes.arrayOf(
