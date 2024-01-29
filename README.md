@@ -25,9 +25,9 @@ This project was built as part of the **[freeCodeCamp’s legacy Front End Devel
 
 <img src="./src/assets/images/ipad.png" width="300" />
 
-### Mobile view 📱
+<!-- ### Mobile view 📱
 
-<img src="./src/assets/images/phone.png" width="250" />
+<img src="./src/assets/images/phone.png" width="250" /> -->
 
 ## Features:
 
