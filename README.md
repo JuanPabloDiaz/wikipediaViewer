@@ -1,19 +1,18 @@
 <div id="top"></div>
 
-# 25 + 5 Clock ⏰
+# Wikipedia Viewer
 
-This project is a responsive web application that allows users to use a pomodoro timer to break down work into intervals, traditionally 25 minutes in length, separated by short breaks. Thats why is called 25 + 5 clock
+This project is a responsive web application that allows users to search for articles on Wikipedia.
 
 ## Description 💡
 
-This project is a 25 + 5 clock, which is a time management system that encourages people to work with the time they have—rather than against it. Using this method, you break your workday into 25-minute chunks separated by five-minute breaks. These intervals are referred to as pomodoros.
-
-This project was built as part of the **[freeCodeCamp Front End Libraries Certification](https://www.freecodecamp.org/certification/1diazdev/front-end-development-libraries)**. The goal was to build a 25 + 5 clock with React.
+This project is a Wikipedia Viewer, which allow users to search for articles on Wikipedia. Users can view the search results and click on a result to view the full article. As well as to search for random articles.
+This project was built as part of the **[freeCodeCamp Front End Libraries Certification](https://www.freecodecamp.org/certification/1diazdev/front-end-development-libraries)**. The goal was to build a Wikipedia Viewer with React.
 
 <div align="center">
 
-[![25 + 5 clock](https://img.shields.io/badge/View%20Demo-000?style=for-the-badge&logo=Google-Chrome&logoColor=white)](https://25.jpdiaz.dev/)
-[![repo](https://img.shields.io/badge/View%20Code-000?style=for-the-badge&logo=GitHub&logoColor=white)](https://stackblitz.com/github.com/JuanPabloDiaz/25-5_clock)
+[![Wikipedia Viewer](https://img.shields.io/badge/View%20Demo-000?style=for-the-badge&logo=Google-Chrome&logoColor=white)](https://wiki.jpdiaz.dev/)
+[![repo](https://img.shields.io/badge/View%20Code-000?style=for-the-badge&logo=GitHub&logoColor=white)](https://stackblitz.com/github.com/JuanPabloDiaz/wikipediaViewer)
 
 </div>
 
@@ -35,13 +34,13 @@ This project was built as part of the **[freeCodeCamp Front End Libraries Certif
 
 ## Features:
 
-- Responsive design: [25 + 5 Clock](https://25.jpdiaz.dev) adapts to any screen size, ensuring a consistent and enjoyable experience for all users.
+- Responsive design: [Wikipedia Viewer](https://wiki.jpdiaz.dev) adapts to any screen size, ensuring a consistent and enjoyable experience for all users.
 - Sleek and modern UI: Tailwind CSS provides a beautiful and intuitive user interface.
 - Efficient and performant: Vite.js ensures fast loading times and a smooth experience.
 
 ### Built With 🔑
 
-Welcome to [25 + 5 Clock](https://25.jpdiaz.dev), a simple and intuitive pomodoro timer built with React.js, Vite.js, and Tailwind CSS.
+Welcome to [Wikipedia Viewer](https://wiki.jpdiaz.dev), a simple and intuitive pomodoro timer built with React.js, Vite.js, and Tailwind CSS.
 
 ![React](https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=black)
 ![Vite](https://img.shields.io/badge/Vite-646CFF.svg?style=for-the-badge&logo=Vite&logoColor=white)
@@ -50,12 +49,12 @@ Welcome to [25 + 5 Clock](https://25.jpdiaz.dev), a simple and intuitive pomodor
 Here's a closer look at the tech stack:
 
 - Front-End: React.js, Vite.js, Tailwind CSS
-- Back-End: N/A
+- Back-End: wiki api
 - Deployment: Vercel
 
 ## Get started 🛠️
 
-To get started with [25 + 5 Clock](https://25.jpdiaz.dev), simply clone the repository and follow the setup instructions. You'll be up and running in no time!
+To get started with [Wikipedia Viewer](https://wiki.jpdiaz.dev), simply clone the repository and follow the setup instructions. You'll be up and running in no time!
 
 ### Setup 📋
 
@@ -72,13 +71,13 @@ To get started with [25 + 5 Clock](https://25.jpdiaz.dev), simply clone the repo
 
 ## Contribution 🤝
 
-I welcome contributions to the [25 + 5 Clock](https://25.jpdiaz.dev)! Feel free to fork the repository and submit pull requests with your improvements.
+I welcome contributions to the [Wikipedia Viewer](https://wiki.jpdiaz.dev)! Feel free to fork the repository and submit pull requests with your improvements.
 
 ## License 📜
 
-[25 + 5 Clock](https://25.jpdiaz.dev) is licensed under the MIT License.
+[Wikipedia Viewer](https://wiki.jpdiaz.dev) is licensed under the MIT License.
 
-I hope you enjoy using the 25 + 5 Clock!
+I hope you enjoy using the Wikipedia Viewer!
 
 <!-- OTHER PROJECTS -->
 
